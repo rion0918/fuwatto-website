@@ -9,6 +9,6 @@
     "build": "node scripts/build.mjs",
     "check": "node --check main.js && node scripts/check-site.mjs",
     "verify": "npm run check && npm run build",
-    "deploy:cloudflare": "npm run verify && npx --yes wrangler@4.118.0 pages deploy dist --project-name=fuwatto --branch=main --commit-dirty=true"
+    "deploy:cloudflare": "npm run verify && CLOUDFLARE_ACCOUNT_ID=${CLOUDFLARE_ACCOUNT_ID:-3b7d7afda6c8bf0aa72256c171dd5f04} npx --yes wrangler@4.118.0 pages deploy dist --project-name=fuwatto --branch=main --commit-dirty=true"
   }
 }

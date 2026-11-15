@@ -5,17 +5,32 @@
 | 項目 | 値 |
 | --- | --- |
 | Cloudflare Pagesプロジェクト | `fuwatto` |
+| Cloudflare Account ID | `3b7d7afda6c8bf0aa72256c171dd5f04` |
 | 本番URL | <https://fuwatto.pages.dev/> |
 | 本番ブランチ | `main` |
 | ビルドコマンド | `npm run build` |
 | 出力ディレクトリ | `dist` |
 | Pages方式 | Direct Upload（静的サイト） |
 
-## 通常のリリースフロー
+## GitHub Actions 自動デプロイ設定
 
-1. `npm run verify` を実行する。
-2. 変更を `main` へ反映する。
-3. GitHub Actions が `dist/` を Cloudflare Pages（`fuwatto`）へデプロイする。
+`.github/workflows/deploy.yml` による `main` プッシュ時の自動デプロイを有効にするには、リポジトリの Secrets に以下を設定します。
+
+- `CLOUDFLARE_ACCOUNT_ID`: `3b7d7afda6c8bf0aa72256c171dd5f04`（設定済み）
+- `CLOUDFLARE_API_TOKEN`: `fuwatto` プロジェクトを持つアカウントで発行した **Cloudflare Pages: Edit** 権限付きの API トークン
+
+CLI から登録する場合:
+
+```bash
+gh secret set CLOUDFLARE_API_TOKEN -R rion0918/pop-reminder-website
+```
+
+## 手動デプロイ
+
+```bash
+npm run verify
+npm run deploy:cloudflare
+```
 
 ## リリース確認
 

@@ -3,6 +3,8 @@ import { join } from 'node:path';
 
 const root = process.cwd();
 const output = join(root, 'dist');
+const rootEntries = await readdir(root);
+const verificationFiles = rootEntries.filter((name) => /^google[a-z0-9_-]*\.html$/i.test(name));
 const files = [
   'index.html',
   'privacy.html',
@@ -14,6 +16,7 @@ const files = [
   'robots.txt',
   'sitemap.xml',
   '_headers',
+  ...verificationFiles,
 ];
 
 await rm(output, { recursive: true, force: true });
