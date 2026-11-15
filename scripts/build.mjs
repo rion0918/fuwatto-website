@@ -13,7 +13,7 @@ const files = [
   'site.webmanifest',
   'robots.txt',
   'sitemap.xml',
-  '_routes.json',
+  '_headers',
 ];
 
 await rm(output, { recursive: true, force: true });

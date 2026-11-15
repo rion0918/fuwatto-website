@@ -2,8 +2,3 @@
 name = "fuwatto"
 compatibility_date = "2026-08-01"
 pages_build_output_dir = "dist"
-
-[[d1_databases]]
-binding = "WAITLIST_DB"
-database_name = "pop-reminder-waitlist"
-database_id = "cce43f04-4e19-4e91-b7a7-517aa66228cc"

@@ -3,16 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "『ふわっと。』公式プロモーションサイト",
+  "description": "『ふわっと。』公式サイト",
   "scripts": {
-    "dev": "npm run build && npm run db:migrate:local && npx --yes wrangler@4.118.0 pages dev",
+    "dev": "npm run build && npx --yes wrangler@4.118.0 pages dev dist",
     "build": "node scripts/build.mjs",
-    "check": "node --check main.js && node --check functions/api/waitlist.js && node scripts/check-waitlist.mjs && node scripts/check-site.mjs",
+    "check": "node --check main.js && node scripts/check-site.mjs",
     "verify": "npm run check && npm run build",
-    "db:migrate:local": "npx --yes wrangler@4.118.0 d1 migrations apply pop-reminder-waitlist --local",
-    "db:migrate:remote": "npx --yes wrangler@4.118.0 d1 migrations apply pop-reminder-waitlist --remote",
-    "waitlist:count": "npx --yes wrangler@4.118.0 d1 execute pop-reminder-waitlist --remote --command \"SELECT COUNT(*) AS signups FROM waitlist_signups;\"",
-    "waitlist:campaigns": "npx --yes wrangler@4.118.0 d1 execute pop-reminder-waitlist --remote --command \"SELECT COALESCE(utm_source, '(direct)') AS source, COALESCE(utm_medium, '(none)') AS medium, COALESCE(utm_campaign, '(none)') AS campaign, COUNT(*) AS signups FROM waitlist_signups GROUP BY 1, 2, 3 ORDER BY signups DESC;\"",
-    "deploy:cloudflare": "npm run verify && npx --yes wrangler@4.118.0 pages deploy --branch main --commit-dirty=true"
+    "deploy:cloudflare": "npm run verify && npx --yes wrangler@4.118.0 pages deploy dist --project-name=fuwatto --branch=main --commit-dirty=true"
   }
 }

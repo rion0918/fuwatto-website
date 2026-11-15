@@ -1,12 +1,12 @@
 {
   "name": "ふわっと。",
   "short_name": "ふわっと。",
-  "description": "忘れる前に、数秒だけ。ふわっと残せるリマインダーアプリ。",
+  "description": "思いついたら傾けて話すだけ。小さな用事を色づく「泡」にして残せるAndroid向けリマインダーアプリ。",
   "lang": "ja",
-  "start_url": "./",
+  "start_url": "/",
   "display": "standalone",
-  "background_color": "#F5F3FF",
-  "theme_color": "#F5F3FF",
+  "background_color": "#fbf9f6",
+  "theme_color": "#fbf9f6",
   "icons": [
     {
       "src": "assets/icon-192.png",
