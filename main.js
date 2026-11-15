@@ -5,9 +5,18 @@ const replayBtn = document.querySelector('[data-pv-replay]');
 
 if (video && playSoundBtn) {
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (prefersReducedMotion) {
-    video.removeAttribute('autoplay');
-    video.pause();
+  const saveData = Boolean(navigator.connection && navigator.connection.saveData);
+  const startAmbientPreview = () => {
+    if (prefersReducedMotion || saveData || !video.muted) return;
+    video.preload = 'metadata';
+    video.play().catch(() => {});
+  };
+  if (!prefersReducedMotion && !saveData) {
+    if (document.readyState === 'complete') {
+      window.setTimeout(startAmbientPreview, 250);
+    } else {
+      window.addEventListener('load', () => window.setTimeout(startAmbientPreview, 250), { once: true });
+    }
   }
 
   const startSoundPlayback = () => {
