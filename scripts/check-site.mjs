@@ -126,7 +126,7 @@ if (!/User-agent:\s*\*/.test(robotsTxt) || !/Sitemap:\s*https:\/\/fuwatto\.rioma
 if (!/<video:video>/.test(sitemapXml) || !/<image:image>/.test(sitemapXml)) {
   failures.push('sitemap.xml must include image and video sitemap tags');
 }
-if (!/Cache-Control:\s*public,\s*max-age=31536000,\s*immutable/.test(headersFile) || !/X-Content-Type-Options:\s*nosniff/.test(headersFile)) {
+if (!/Cache-Control:\s*public,\s*max-age=31536000,\s*immutable/.test(headersFile) || !/X-Content-Type-Options:\s*nosniff/.test(headersFile) || !/https:\/\/fuwatto\.pages\.dev\/\*[\s\S]*X-Robots-Tag:\s*noindex/.test(headersFile) || !/https:\/\/fuwatto\.riomaru\.jp\/\*[\s\S]*X-Robots-Tag:\s*index,\s*follow/.test(headersFile)) {
   failures.push('_headers must configure immutable asset caching and security headers');
 }
 

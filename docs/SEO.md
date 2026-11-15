@@ -17,7 +17,7 @@
 - `robots.txt`: クロール許可と `sitemap.xml` URL
 - `sitemap.xml`: インデックス対象URL + `image:image` / `video:video` 拡張タグ
 - `site.webmanifest`: アプリ名、テーマ色、アイコン
-- `_headers`: 長期キャッシュ（`/assets/*` は `immutable`）、`X-Robots-Tag`、各種セキュリティヘッダ
+- `_headers`: 長期キャッシュ（`/assets/*` は `immutable`）、`fuwatto.riomaru.jp` に `X-Robots-Tag: index, follow`、`*.pages.dev` に `X-Robots-Tag: noindex`、各種セキュリティヘッダ
 - `public/assets/og-image-fuwatto.png`: 1200×630の共有画像
 - `public/assets/*.webp`: 配信最適化された次世代画像（`<picture>` + PNGフォールバック）
 
