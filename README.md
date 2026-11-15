@@ -2,7 +2,7 @@
 
 リマインダーアプリ「ふわっと。」の公式プロモーションサイトです。
 
-- 公開サイト: <https://fuwatto.pages.dev/>
+- 公開サイト: <https://fuwatto.riomaru.jp/>
 - Google Play: <https://play.google.com/store/apps/details?id=com.rion0918.popreminder&hl=ja>
 - アプリ本体: <https://github.com/rion0918/pop-reminder>
 - ホスティング: Cloudflare Pages

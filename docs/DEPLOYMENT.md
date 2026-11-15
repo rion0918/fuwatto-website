@@ -6,7 +6,7 @@
 | --- | --- |
 | Cloudflare Pagesプロジェクト | `fuwatto` |
 | Cloudflare Account ID | `3b7d7afda6c8bf0aa72256c171dd5f04` |
-| 本番URL | <https://fuwatto.pages.dev/> |
+| 本番URL | <https://fuwatto.riomaru.jp/> |
 | 本番ブランチ | `main` |
 | ビルドコマンド | `npm run build` |
 | 出力ディレクトリ | `dist` |
@@ -35,9 +35,9 @@ npm run deploy:cloudflare
 ## リリース確認
 
 ```bash
-curl -fsSIL https://fuwatto.pages.dev/
-curl -fsSIL https://fuwatto.pages.dev/privacy
-curl -fsSIL https://fuwatto.pages.dev/terms
-curl -fsSIL https://fuwatto.pages.dev/assets/pv-fuwatto.mp4
-curl -fsSIL https://fuwatto.pages.dev/sitemap.xml
+curl -fsSIL https://fuwatto.riomaru.jp/
+curl -fsSIL https://fuwatto.riomaru.jp/privacy
+curl -fsSIL https://fuwatto.riomaru.jp/terms
+curl -fsSIL https://fuwatto.riomaru.jp/assets/pv-fuwatto.mp4
+curl -fsSIL https://fuwatto.riomaru.jp/sitemap.xml
 ```

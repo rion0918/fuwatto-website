@@ -2,13 +2,13 @@
 
 ## URLの正本
 
-現在の正規ドメインは `https://fuwatto.pages.dev` です。
+現在の正規ドメインは `https://fuwatto.riomaru.jp` です。
 
 | ページ | canonical |
 | --- | --- |
-| トップ | `https://fuwatto.pages.dev/` |
-| プライバシーポリシー | `https://fuwatto.pages.dev/privacy` |
-| 利用規約 | `https://fuwatto.pages.dev/terms` |
+| トップ | `https://fuwatto.riomaru.jp/` |
+| プライバシーポリシー | `https://fuwatto.riomaru.jp/privacy` |
+| 利用規約 | `https://fuwatto.riomaru.jp/terms` |
 
 ## SEO関連ファイル
 
@@ -43,6 +43,6 @@ npm run check
 
 ## 公開後の確認
 
-- Google Search Console へ `https://fuwatto.pages.dev/`（URLプレフィックス）を追加し、`https://fuwatto.pages.dev/sitemap.xml` を送信する。
+- Google Search Console へ `https://fuwatto.riomaru.jp/`（URLプレフィックス）を追加し、`https://fuwatto.riomaru.jp/sitemap.xml` を送信する。
 - URL検査でトップページのインデックス登録をリクエストする。
 - Lighthouse（モバイル・デスクトップ）および PageSpeed Insights で Core Web Vitals を確認する。

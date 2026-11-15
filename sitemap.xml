@@ -5,48 +5,48 @@
   xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
 >
   <url>
-    <loc>https://fuwatto.pages.dev/</loc>
+    <loc>https://fuwatto.riomaru.jp/</loc>
     <lastmod>2026-11-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://fuwatto.pages.dev/assets/og-image-fuwatto.png</image:loc>
+      <image:loc>https://fuwatto.riomaru.jp/assets/og-image-fuwatto.png</image:loc>
       <image:title>ふわっと。｜忘れる前に、ふわっと残す。</image:title>
       <image:caption>傾けて話すだけで泡になるAndroid向けリマインダーアプリ「ふわっと。」</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fuwatto.pages.dev/assets/screen-voice-card.png</image:loc>
+      <image:loc>https://fuwatto.riomaru.jp/assets/screen-voice-card.png</image:loc>
       <image:title>傾けて話す音声入力シート</image:title>
       <image:caption>スマホを傾けて話すだけでタイトルと日時を自動で泡に登録</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fuwatto.pages.dev/assets/screen-home.png</image:loc>
+      <image:loc>https://fuwatto.riomaru.jp/assets/screen-home.png</image:loc>
       <image:title>しゃぼん玉リマインダーのホーム画面</image:title>
       <image:caption>期限が近づくほど色づく泡が浮かぶホーム画面</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fuwatto.pages.dev/assets/screen-widget.png</image:loc>
+      <image:loc>https://fuwatto.riomaru.jp/assets/screen-widget.png</image:loc>
       <image:title>Androidホーム画面ウィジェット</image:title>
       <image:caption>アプリを開かずに確認できるホーム画面ウィジェット</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://fuwatto.pages.dev/assets/pv-poster.jpg</video:thumbnail_loc>
+      <video:thumbnail_loc>https://fuwatto.riomaru.jp/assets/pv-poster.jpg</video:thumbnail_loc>
       <video:title>リマインダーアプリ『ふわっと。』紹介動画（24秒）</video:title>
       <video:description>思い出した瞬間に傾けて話すだけで泡になり、用事が済んだらタップで割れるAndroidリマインダーアプリ『ふわっと。』の紹介動画。</video:description>
-      <video:content_loc>https://fuwatto.pages.dev/assets/pv-fuwatto.mp4</video:content_loc>
+      <video:content_loc>https://fuwatto.riomaru.jp/assets/pv-fuwatto.mp4</video:content_loc>
       <video:duration>24</video:duration>
       <video:publication_date>2026-11-15T00:00:00+09:00</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
   </url>
   <url>
-    <loc>https://fuwatto.pages.dev/privacy</loc>
+    <loc>https://fuwatto.riomaru.jp/privacy</loc>
     <lastmod>2026-11-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://fuwatto.pages.dev/terms</loc>
+    <loc>https://fuwatto.riomaru.jp/terms</loc>
     <lastmod>2026-11-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>

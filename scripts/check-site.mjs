@@ -47,8 +47,8 @@ const requiredPatterns = [
   ['Japanese language declaration', /<html lang="ja">/],
   ['page title', /<title>[^<]+<\/title>/],
   ['meta description', /<meta\s+name="description"/],
-  ['fuwatto canonical URL', /rel="canonical" href="https:\/\/fuwatto\.pages\.dev\/"/],
-  ['hreflang ja', /rel="alternate" hreflang="ja" href="https:\/\/fuwatto\.pages\.dev\/"/],
+  ['fuwatto canonical URL', /rel="canonical" href="https:\/\/fuwatto\.riomaru\.jp\/"/],
+  ['hreflang ja', /rel="alternate" hreflang="ja" href="https:\/\/fuwatto\.riomaru\.jp\/"/],
   ['latest Open Graph image', /property="og:image"[\s\S]*?og-image-fuwatto\.png/],
   ['Twitter card', /name="twitter:card"\s+content="summary_large_image"/],
   ['structured data', /application\/ld\+json/],
@@ -120,7 +120,7 @@ if (h1Count !== 1) failures.push(`Expected one h1, found ${h1Count}`);
 if (!/^name = "fuwatto"$/m.test(wrangler)) failures.push('Pages project must be fuwatto');
 if (!/pages_build_output_dir = "dist"/.test(wrangler)) failures.push('Missing Pages output directory');
 
-if (!/User-agent:\s*\*/.test(robotsTxt) || !/Sitemap:\s*https:\/\/fuwatto\.pages\.dev\/sitemap\.xml/.test(robotsTxt)) {
+if (!/User-agent:\s*\*/.test(robotsTxt) || !/Sitemap:\s*https:\/\/fuwatto\.riomaru\.jp\/sitemap\.xml/.test(robotsTxt)) {
   failures.push('robots.txt must allow crawlers and declare sitemap URL');
 }
 if (!/<video:video>/.test(sitemapXml) || !/<image:image>/.test(sitemapXml)) {
